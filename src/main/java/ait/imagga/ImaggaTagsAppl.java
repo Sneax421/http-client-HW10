@@ -26,6 +26,8 @@ public class ImaggaTagsAppl {
         RequestEntity<String> request = new RequestEntity<>(headers, HttpMethod.GET, uri);
         ResponseEntity<TagsResponseDto> response = restTemplate.exchange(request, TagsResponseDto.class);
         response.getBody().getResult().getColors().getBackground_colors().forEach(System.out::println);
+        response.getBody().getResult().getColors().getForeground_colors().forEach(System.out::println);
+        response.getBody().getResult().getColors().getImage_colors().forEach(System.out::println);
 
     }
 }
