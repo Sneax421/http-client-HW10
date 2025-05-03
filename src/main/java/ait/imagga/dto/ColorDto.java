@@ -6,5 +6,5 @@ import java.util.List;
 
 @Getter
 public class ColorDto {
-    private List<TagDto> tags;
+    private List<BackGroundColors> background_colors;
 }
