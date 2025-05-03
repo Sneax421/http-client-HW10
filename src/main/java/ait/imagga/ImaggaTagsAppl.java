@@ -20,7 +20,7 @@ public class ImaggaTagsAppl {
         headers.add("Authorization", "Basic YWNjXzdjOTUwMmYyZTNkODUzNToxMjlmNTI4YzAyZTlhN2Q0OWVkYjQxOWU5OWVhN2U2NA==");
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString("https://api.imagga.com/v2/colors")
                 .queryParam("image_url", imgUrl )
-                .queryParam("extract_overall_colors ",overallColors );
+                .queryParam("extract_overall_colors",overallColors );
 //        URI uri = new URI("https://api.imagga.com/v2/colors?image_url=https://imagga.com/static/images/tagging/wind-farm-538576_640.jpg");
         URI uri = builder.build().toUri();
         RequestEntity<String> request = new RequestEntity<>(headers, HttpMethod.GET, uri);

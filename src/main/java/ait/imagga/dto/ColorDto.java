@@ -6,8 +6,8 @@ import java.util.List;
 
 @Getter
 public class ColorDto {
-    private List<BackGroundColors> background_colors;
-    private List<ForegroundColors> foreground_colors;
-    private List<ImageColors> image_colors;
+    private List<ColorInfo> background_colors;
+    private List<ColorInfo> foreground_colors;
+    private List<ColorInfo> image_colors;
 
 }
