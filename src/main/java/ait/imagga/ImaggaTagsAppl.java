@@ -17,7 +17,7 @@ public class ImaggaTagsAppl {
         int overallColors = 1;
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
-        headers.add("Authorization", "Basic YWNjXzdjOTUwMmYyZTNkODUzNToxMjlmNTI4YzAyZTlhN2Q0OWVkYjQxOWU5OWVhN2U2NA==");
+        headers.add("Authorization", "Basic ==");
         UriComponentsBuilder builder = UriComponentsBuilder.fromUriString("https://api.imagga.com/v2/colors")
                 .queryParam("image_url", imgUrl )
                 .queryParam("extract_overall_colors",overallColors );
